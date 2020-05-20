@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test execution suite">
+    <test name="Terkwaz Test">
+        <classes>
+            <class name="GUITestAutomation.SearchTextTest"/>
+            <class name="GUITestAutomation.FileUploadTest"/>
+            <class name="GUITestAutomation.DynamicLoadingTest"/>
+            <class name="APITestAutomation.GETOneRandomFact"/>
+        </classes>
+    </test>
+</suite>
