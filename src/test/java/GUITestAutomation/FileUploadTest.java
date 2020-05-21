@@ -5,6 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.FileUploadPage;
 import pages.HerokuappHomePage;
+//import utilities.ExtentReport;
 import utilities.LoadProperties;
 
 public class FileUploadTest extends Driver {
@@ -12,6 +13,11 @@ public class FileUploadTest extends Driver {
     @Test
     public void uploadFile()
     {
+//        ExtentReport extentReport = new ExtentReport();
+
+        //Create test for the Extent Report
+        Driver.test = Driver.extent.createTest("File Upload");
+
         //Open herokuapp URL from Properties file
         String url = LoadProperties.environment.getProperty("Herokuapp");
         driver.navigate().to(url);
