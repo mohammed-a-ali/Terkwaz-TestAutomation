@@ -29,12 +29,12 @@
 6. After the Test is done A new folder `Reports` will be created
 7. Expand the folder and Right click on _"index.html"_
 8. Select "Open in browser" then select "Default"
-![Run Test Cases](https://github.com/mohammed-a-ali/Terkwaz-TestAutomation/blob/master/Images/OpenReport.png)
+![Open The Report](https://github.com/mohammed-a-ali/Terkwaz-TestAutomation/blob/master/Images/OpenReport.png)
 9. The Report is displayed for each test case and a screenshot is attached
-![Run Test Cases](https://github.com/mohammed-a-ali/Terkwaz-TestAutomation/blob/master/Images/GUIReportView.png)
+![GUI Report View](https://github.com/mohammed-a-ali/Terkwaz-TestAutomation/blob/master/Images/GUIReportView.png)
 10. For the API report select "GET one random cat fact" you can see the response body attached
-![Run Test Cases](https://github.com/mohammed-a-ali/Terkwaz-TestAutomation/blob/master/Images/APIReportView.png)
+![API Report View](https://github.com/mohammed-a-ali/Terkwaz-TestAutomation/blob/master/Images/APIReportView.png)
 11. You also can check the API Response in the _"output.txt"_ file
-![Run Test Cases](https://github.com/mohammed-a-ali/Terkwaz-TestAutomation/blob/master/Images/APIResponse.png)
+![API Response text file](https://github.com/mohammed-a-ali/Terkwaz-TestAutomation/blob/master/Images/APIResponse.png)
 12. Also you can switch to dashboard view by selecting _"Dashboard"_ from the left side menu
-![Run Test Cases](https://github.com/mohammed-a-ali/Terkwaz-TestAutomation/blob/master/Images/DashboardReportView.png)
+![Dashboard Report View](https://github.com/mohammed-a-ali/Terkwaz-TestAutomation/blob/master/Images/DashboardReportView.png)
