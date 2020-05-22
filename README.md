@@ -30,6 +30,8 @@
 7. Expand the folder and Right click on _"index.html"_
 8. Select "Open in browser" then select "Default"
 ![Open The Report](https://github.com/mohammed-a-ali/Terkwaz-TestAutomation/blob/master/Images/OpenReport.png)
+Or you can open the report from the explorer by navigating to the `Project folder/Reports/index.html`
+![Open The Report from the explorer](https://github.com/mohammed-a-ali/Terkwaz-TestAutomation/blob/master/Images/OpenReportFromExplorer.png)
 9. The Report is displayed for each test case and a screenshot is attached
 ![GUI Report View](https://github.com/mohammed-a-ali/Terkwaz-TestAutomation/blob/master/Images/GUIReportView.png)
 10. For the API report select "GET one random cat fact" you can see the response body attached
