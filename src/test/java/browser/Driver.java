@@ -71,8 +71,6 @@ public class Driver {
     @AfterMethod
     public void ScreenshotOnFailure(ITestResult result) throws IOException {
         if (result.getStatus() == ITestResult.FAILURE) {
-            System.out.println("Failed");
-            System.out.println("Taking a Screenshot...");
             //Add Test case name into the extent report
             test.log(Status.FAIL, "TEST CASE " + result.getName() + " IS FAILED");
             //Add the exception into the extent report
