@@ -8,6 +8,16 @@
 * Rest Assured (for API Automation)
 * Extent Report (for Reporting)
 
+## Project structure 
+
+	- The project uses the "Page object model" design pattern so:
+	1. Each page of the scenario have a class that contains all elements and all functional Methods for all actions in the page.
+	2. Each test case have a class to execute the relevant test case.
+  
+	- There is an xml file "TestNGExecution.xml" to execute all test cases sequentially.
+	- All URLs are included in a properties file "Environment.properties" it also contains the browser name.
+	- "Driver.java" class is the testBase class which all the test clases inherit it.
+
 **To Run the project**
 1. Clone the project
 2. Open the project using your IDE (Eclipse/ Intellij)
