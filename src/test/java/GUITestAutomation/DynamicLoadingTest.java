@@ -8,14 +8,12 @@ import pages.Example2Page;
 import pages.HerokuappHomePage;
 import utilities.LoadProperties;
 
-//import utilities.ExtentReport;
 
 public class DynamicLoadingTest extends Driver {
 
     @Test
     public void dynamicLoading()
     {
-//        ExtentReport extentReport = new ExtentReport();
         //Create test for the Extent Report
         Driver.test = Driver.extent.createTest("Dynamic Loading");
 

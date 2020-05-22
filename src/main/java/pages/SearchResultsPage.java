@@ -14,7 +14,7 @@ public class SearchResultsPage extends PageBase {
 
     public boolean thirdResult() {
         //Inspect the Third result
-        byXpath = By.xpath("(//h3[contains(text(),'WebDriver')])[3]");
+        byXpath = By.xpath("(//h3[contains(text(),'WebDriver')])[4]");
         //Wait for the element to be present
         ElementManager.WaitForElementPresent(byXpath);
         //Locate the third result element

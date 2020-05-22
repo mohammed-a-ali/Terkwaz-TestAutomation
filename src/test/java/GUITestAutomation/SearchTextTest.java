@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 import pages.GooglePage;
 import pages.SearchResultsPage;
 import utilities.LoadProperties;
-//import utilities.ExtentReport;
 
 public class SearchTextTest extends Driver {
 
@@ -14,8 +13,6 @@ public class SearchTextTest extends Driver {
 
     @Test
     public void SearchText() {
-
-//        ExtentReport extentReport = new ExtentReport();
 
         //Create test for the Extent Report
         Driver.test = Driver.extent.createTest("Search for selenium webdriver");

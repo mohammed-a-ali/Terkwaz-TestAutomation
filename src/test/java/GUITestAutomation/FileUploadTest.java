@@ -13,7 +13,6 @@ public class FileUploadTest extends Driver {
     @Test
     public void uploadFile()
     {
-//        ExtentReport extentReport = new ExtentReport();
 
         //Create test for the Extent Report
         Driver.test = Driver.extent.createTest("File Upload");

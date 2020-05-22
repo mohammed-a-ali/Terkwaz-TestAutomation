@@ -26,7 +26,7 @@ public class GETOneRandomFact extends Driver {
     public void GetRandomCatFact() throws IOException {
 
         //Create test for the Extent Report
-        Driver.test = Driver.extent.createTest("GET one random cat fact");
+        test = extent.createTest("GET one random cat fact");
 
         //Print the response body to a text file
         config = config().logConfig(new LogConfig().defaultStream(new PrintStream(new File(System.getProperty("user.dir") + "/Reports/output.txt"))));
@@ -38,7 +38,6 @@ public class GETOneRandomFact extends Driver {
             assertThat().
             body("text", notNullValue()).
             log().all();
-        //test = extent.createTest(config.logConfig(new LogConfig().enablePrettyPrinting(false)).toString());
 
         //Get the API response to be printed
         Response response = RestAssured.get(getOneRandomCatFactEP);
@@ -48,7 +47,7 @@ public class GETOneRandomFact extends Driver {
         //Attaching the response body to the report
         if(response.statusCode() == 200)
         {
-            test.log(Status.PASS, "Response body is: "+ bodyResponse);
+            test.log(Status.PASS, "Response body is: \n"+ bodyResponse);
         }
 
     }

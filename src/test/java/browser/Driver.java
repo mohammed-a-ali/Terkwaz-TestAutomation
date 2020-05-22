@@ -67,11 +67,6 @@ public class Driver {
         extent.attachReporter(sparkReporter);
     }
 
-    @AfterSuite
-    public void endReport() {
-        extent.flush();
-    }
-
     //Take a screenshot when testcase fails and add it to the Screenshot folder
     @AfterMethod
     public void ScreenshotOnFailure(ITestResult result) throws IOException {
@@ -79,16 +74,24 @@ public class Driver {
             System.out.println("Failed");
             System.out.println("Taking a Screenshot...");
             //Add Test case name into the extent report
-            test.log(Status.FAIL, "TEST CASE FAILED IS " + result.getName());
+            test.log(Status.FAIL, "TEST CASE " + result.getName() + " IS FAILED");
             //Add the exception into the extent report
-            test.log(Status.FAIL, "TEST CASE FAILED IS " + result.getThrowable());
+            test.log(Status.FAIL, "TEST CASE IS FAILED DUE TO " + result.getThrowable());
             String screenshotPath = Helper.reportScreenshot(driver, result.getName());
             //Add screenshot to the report
             test.addScreenCaptureFromPath(screenshotPath);
         } else if (result.getStatus() == ITestResult.SKIP) {
-            test.log(Status.SKIP, "TEST CASE SKIPPED IS " + result.getName());
+            test.log(Status.SKIP, "TEST CASE " + result.getName() + " IS SKIPPED");
         } else if (result.getStatus() == ITestResult.SUCCESS) {
-            test.log(Status.PASS, "TEST CASE PASSED IS " + result.getName());
+            test.log(Status.PASS, "TEST CASE " + result.getName() + " IS PASSED");
+            String screenshotPath = Helper.reportScreenshot(driver, result.getName());
+            //Add screenshot to the report
+            test.addScreenCaptureFromPath(screenshotPath);
         }
+    }
+
+    @AfterSuite
+    public void endReport() {
+        extent.flush();
     }
 }
